@@ -1,0 +1,172 @@
+<html>
+<head>
+    <title>$Title$</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="FileJS/changimg.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .product {
+            float: left;
+            margin-left: 40px;
+        }
+
+        #showall {
+            overflow-x: auto;
+            overflow-x: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+        }
+
+        #showall::-webkit-scrollbar {
+            width: 0 !important;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div style="width: 100%;position: fixed;float: top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">
+                        Phim Lẻ
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Phim Lẻ 2015</a>
+                        <a class="dropdown-item" href="#">Phim Lẻ 2016</a>
+                        <a class="dropdown-item" href="#">Phim Lẻ 2017</a>
+                        <a class="dropdown-item" href="#">Phim Lẻ 2018</a>
+                        <a class="dropdown-item" href="#">Phim Lẻ 2019</a>
+                        <a class="dropdown-item" href="#">Phim Lẻ 2020</a>
+                        <a class="dropdown-item" href="#">Phim Lẻ 2021</a>
+                        <a class="dropdown-item" href="#">Phim Lẻ 2022</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+                        Phim Bộ
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Anime</a>
+                        <a class="dropdown-item" href="#">Phim Bộ Hàng Quốc</a>
+                        <a class="dropdown-item" href="#">Phim Bộ Mỹ</a>
+                        <a class="dropdown-item" href="#">Phim Bộ Asanzo ando</a>
+                        <a class="dropdown-item" href="#">Phim Bộ Melody Mask</a>
+                        <a class="dropdown-item" href="#">Phim Bộ Siêu Anh Hùng</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
+                        Thể Loại
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Phim Khoa Học</a>
+                        <a class="dropdown-item" href="#">Phim Viễn Tưởng</a>
+                        <a class="dropdown-item" href="#">Phim 2 Người</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop4" data-toggle="dropdown">
+                        Quốc Gia
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">USA</a>
+                        <a class="dropdown-item" href="#">JAVan</a>
+                        <a class="dropdown-item" href="#">Thái Lan</a>
+                        <a class="dropdown-item" href="#">Đông Lào</a>
+                        <a class="dropdown-item" href="#">Việt Nam</a>
+                        <a class="dropdown-item" href="#">Capuchia</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div style="margin: 15px"><a href="/login.html">Đăng Nhập</a></div>
+
+        </div>
+    </nav>
+</div>
+<div style="height: 1500px">
+    <div><img id="picture" src="imgWeb/imgbaner/img1.jpg" width="100%" height="450px"></div>
+    <div>
+        <div id="left" style="width: 70%;background-color: greenyellow; float: left">
+          <div align="center">
+            <table id="showall">
+
+            </table>
+          </div>
+        </div>
+        <div id="right" style="width: 30%;height: 550px;background-color: orange;float: left;border-radius: 10%">
+            <div><img src="imgWeb/logo/phimlehot.png" style="width: 100%" height="130px"></div>
+        </div>
+        <div id="right1" style="width: 30%;height: 500px;background-color: orange;float: left;border-radius: 10%">
+            <div><img src="imgWeb/logo/phimbohot.png" style="width: 100%" height="130px"></div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <hr>
+</div>
+<div>
+    <div id="footer">
+        <p class="foodters">
+            Đ/c: Số 23 Lô TT01 Đường Xanh Đỏ Tím Vàng Nháy Nháy , P. Thanh Lâu, Q. Bốn Đình, TP. Hà Nội<br>
+            ĐT: 01692698618 - Fax: 0392 698 618<br>
+        </p>
+    </div>
+</div>
+</body>
+<script>
+    function showallfiml() {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:8080/movie/showall",
+            //xử lý khi thành công
+            success: function (data) {
+                let str = "";
+                for (let i = 0; i < data.length; i++) {
+                    str += "<tr>"
+                    str += "<td>"
+                    str += "<div class=\"product\" style=\"height: 300px\">"
+                    str += `<div><a href="Fiml-details.html?id=${data[i].idFilm}"><button type="submit"><img src="${data[i].imgFilm}" height="250px"></button></a></div>`
+                    str += `<div style="width: 170px;white-space: nowrap; overflow: hidden;text-overflow: clip">${data[i].nameFilm}</div>`
+                    str += `<div>${data[i].year}</div>`
+                    str += "</div>"
+                    str += "</td>"
+                    str += "<td>"
+                    str += `<a href="EditFilm.html?id=${data[i].idFilm}"><button style="background-color: yellow;border: 1px solid black;border-radius: 10%">Edit</button>              </a><button style="background-color: red;border: 1px solid black;border-radius: 10%">Delete</button>`
+                    str += "</td>"
+                    str += "</tr>"
+
+                }
+
+                document.getElementById("showall").innerHTML = str;
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+    }
+
+    showallfiml();
+</script>
+</html>
